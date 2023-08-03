@@ -2,8 +2,8 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   #version = "3.11.0"  
-  # version = "~> 3.11"
-  version = "4.0.1"  
+  # version = "~> 5.1"
+  version = "5.1.1"  
 
   # VPC Basic Details
   name = "vpc-dev"
@@ -41,7 +41,7 @@ module "vpc" {
   }
 
   tags = {
-    Owner = "kalyan"
+    Owner = "Mia"
     Environment = "dev"
   }
 
